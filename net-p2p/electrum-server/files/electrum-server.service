@@ -1,0 +1,14 @@
+[Unit]
+Description=Server for the Electrum thin Bitcoin client
+After=network.target
+
+[Service]
+EnvironmentFile=/etc/conf.d/electrum-server
+Type=simple
+ExecStart=/usr/bin/electrum-server
+User=electrum
+Nice=$NICELEVEL
+IOSchedulingClass=$IONICE_CLASS
+
+[Install]
+WantedBy=multi-user.target

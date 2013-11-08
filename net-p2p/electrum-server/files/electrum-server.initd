@@ -1,0 +1,12 @@
+#!/sbin/runscript
+
+description="Server for the Electrum thin Bitcoin client"
+start_stop_daemon_args="--user electrum --nice ${NICE_LEVEL} --ionice ${IONICE_CLASS}"
+command=/usr/bin/electrum-server
+command_background=true
+pidfile=/run/electrum.pid
+required_files=/etc/electrum.conf
+
+depend() {
+        need net
+}
