@@ -104,14 +104,7 @@ RDEPEND="${DEPEND}
 	opencl? (
 		|| (
 			virtual/opencl
-			virtual/opencl-sdk
-			dev-util/ati-stream-sdk
-			dev-util/ati-stream-sdk-bin
-			dev-util/amdstream
-			dev-util/amd-app-sdk
-			dev-util/amd-app-sdk-bin
 			dev-util/nvidia-cuda-sdk[opencl]
-			dev-util/intel-opencl-sdk
 		)
 	)
 "

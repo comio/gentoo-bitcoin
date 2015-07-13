@@ -1,16 +1,17 @@
-# Copyright 1999-2014 Gentoo Foundation
+# Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/net-libs/libblkmaker/libblkmaker-0.4.0.ebuild,v 1.1 2014/06/06 10:58:34 blueness Exp $
 
 EAPI=5
 
 DESCRIPTION="C implementation of getblocktemplate (BIP 22)"
+HOMEPAGE="https://gitorious.org/bitcoin/libblkmaker"
 HOMEPAGE="https://github.com/bitcoin/libblkmaker"
 LICENSE="MIT"
 
 SRC_URI="https://github.com/bitcoin/libblkmaker/archive/v${PV}.tar.gz -> ${P}-github.tgz"
 SLOT="0"
-KEYWORDS="amd64 arm mips ppc ppc64 x86"
+KEYWORDS="~amd64 ~arm ~mips ~ppc ~ppc64 ~x86"
 IUSE=""
 
 DEPEND="

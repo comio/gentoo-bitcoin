@@ -7,8 +7,8 @@ EAPI=5
 BITCOINCORE_COMMITHASH="d8ac90184254fea3a7f4991fd0529dfbd750aea0"
 BITCOINCORE_LJR_PV="0.10.1"
 BITCOINCORE_LJR_DATE="20150428"
-BITCOINCORE_IUSE="examples +ljr logrotate test upnp +wallet xt zeromq"
-BITCOINCORE_POLICY_PATCHES="+cpfp +dcmp rbf spamfilter"
+BITCOINCORE_IUSE="examples ljr logrotate test upnp +wallet xt zeromq"
+BITCOINCORE_POLICY_PATCHES="cpfp dcmp rbf spamfilter"
 BITCOINCORE_NEED_LEVELDB=1
 BITCOINCORE_NEED_LIBSECP256K1=1
 inherit bash-completion-r1 bitcoincore user systemd
@@ -16,7 +16,7 @@ inherit bash-completion-r1 bitcoincore user systemd
 DESCRIPTION="Original Bitcoin crypto-currency wallet for automated services"
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
+KEYWORDS="amd64 arm ~arm64 x86 ~amd64-linux ~x86-linux"
 
 RDEPEND="
 	logrotate? (
